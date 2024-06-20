@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState } from 'react';
+import FilterList from './components/FilterList.tsx';
+import { Dialog, DialogPanel, DialogTitle} from '@headlessui/react'
 
 function App() {
+  let [isOpen, setIsOpen] = useState(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className='openDialog' onClick={() => setIsOpen(true)}>Open dialog</button>
+      <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
+        <div className="dialogBox">
+          <DialogPanel className="dialogPanel">
+            <DialogTitle className="font-bold">Select Filters</DialogTitle>
+            <FilterList/>
+              <button onClick={() => setIsOpen(false)}>Close filter selection</button>
+          </DialogPanel>
+        </div>
+      </Dialog>
+      
     </div>
   );
 }

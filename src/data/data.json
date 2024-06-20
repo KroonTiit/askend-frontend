@@ -1,0 +1,62 @@
+[
+    {
+        "Product Name": "A",
+        "Price": 43.71,
+        "Rating": 1.1,
+        "Stock Quantity": 42.0
+    },
+    {
+        "Product Name": "B",
+        "Price": 95.56,
+        "Rating": 4.9,
+        "Stock Quantity": 28.0
+    },
+    {
+        "Product Name": "C",
+        "Price": 75.88,
+        "Rating": 4.3,
+        "Stock Quantity": 16.0
+    },
+    {
+        "Product Name": "C1",
+        "Price": 63.88,
+        "Rating": 1.8,
+        "Stock Quantity": 15.0
+    },
+    {
+        "Product Name": "D",
+        "Price": 24.04,
+        "Rating": 1.7,
+        "Stock Quantity": 47.0
+    },
+    {
+        "Product Name": "E",
+        "Price": 24.04,
+        "Rating": 1.7,
+        "Stock Quantity": 44.0
+    },
+    {
+        "Product Name": "ED",
+        "Price": 15.23,
+        "Rating": 2.2,
+        "Stock Quantity": 3.0
+    },
+    {
+        "Product Name": "F",
+        "Price": 87.96,
+        "Rating": 3.1,
+        "Stock Quantity": 37.0
+    },
+    {
+        "Product Name": "G",
+        "Price": 64.10,
+        "Rating": 2.7,
+        "Stock Quantity": 7.0
+    },
+    {
+        "Product Name": "GE",
+        "Price": 73.73,
+        "Rating": 2.2,
+        "Stock Quantity": 21.0
+    }
+]
