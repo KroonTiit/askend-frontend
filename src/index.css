@@ -18,6 +18,34 @@ code {
   width: fit-content;
   max-width: 50vw;
 }
-.openDialog {
+.filter {
+  margin: 25px;
+}
+.criteria-box {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.criteria-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
 
+}
+.remove-row {
+  width: 100px;
+}
+
+.critiria-selection {
+  margin: 5px;
+  min-width: 100px;
+}
+button {
+  margin: 5px;
+  min-width: 100px;
+}
+input {
+  margin: 5px
 }

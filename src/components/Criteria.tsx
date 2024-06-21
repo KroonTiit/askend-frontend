@@ -19,6 +19,7 @@ const CriteriaRow = ({
     const onOptionChangeHandler = (event) => {
         setDataOption(event.target.value);
     };
+
     const onQualifierChangeHandler = (event) => {
         criteria.Qualifier = event.target.value;
     }
@@ -44,13 +45,15 @@ const CriteriaRow = ({
         criteria.Name = dataOption;
 
     },[dataOption]);
+
     useEffect(() => {
         setDataConstraints(amountQualifiers);
         setType("number");
     },[]);
+    
     return <>
             <div>
-                <select onChange={onOptionChangeHandler}>
+                <select className="critiria-selection" onChange={onOptionChangeHandler}>
                     {dataTypes.map((option, index) => {
                         return (
                             <option key={index}>
@@ -59,7 +62,7 @@ const CriteriaRow = ({
                         );
                     })}
                 </select>
-                <select onChange={onQualifierChangeHandler}>
+                <select className="critiria-selection" onChange={onQualifierChangeHandler}>
                     {dataConstraints && dataConstraints.map((option, index) => {
                         return (
                             <option key={index}>
@@ -68,7 +71,7 @@ const CriteriaRow = ({
                         );
                     })}
                 </select>
-                <input type={type} ></input>
+                <input className="critiria-selection" type={type} ></input>
             </div>
         </>
   }
